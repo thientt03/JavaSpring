@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Save</title>
+</head>
+<body>
+<a th:href="@{/customer-list}">List</a><br />
+<h1>Add :</h1>
+<form th:action="@{/updateCustomer}" method="POST" th:object="${customerEntity}">
+    Id: <input th:field="*{id}" readonly="true" /> <br/> <br/>
+    Name: <input th:field="*{name}"/><br /><br />
+    Address: <input th:field="*{address}"/><br /><br />
+    Email: <input th:field="*{email}"/><br /><br />
+    <input type="submit" value="Submit">
+</form>
+</form>
+</body>
+</html>

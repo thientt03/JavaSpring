@@ -1,0 +1,28 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Spring Boot - Hibernate</title>
+</head>
+<body>
+<a th:href="@{/customer-list}">List Customer</a>
+<br/> <br/>
+
+<table>
+    <tr>
+        <td>Id: </td>
+        <td><p th:text="${customerEntity.id}"/></td>
+    </tr>
+    <tr>
+        <td>Name: </td>
+        <td><p th:text="${customerEntity.name}"/></td>
+    </tr>
+    <tr>
+        <td>Address: </td>
+        <td><p th:text="${customerEntity.address}"/></td>
+    </tr>
+    <tr>
+        <td>Email: </td>
+        <td><p th:text="${customerEntity.email}"/></td>
+    </tr>
+</table>
+</body>
+</html>
